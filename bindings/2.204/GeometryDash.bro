@@ -13843,14 +13843,14 @@ class SongObject : cocos2d::CCObject {
 class SongOptionsLayer : FLAlertLayer {
 	// virtual ~SongOptionsLayer();
 
-	static SongOptionsLayer* create(CustomSongDelegate*);
+	static SongOptionsLayer* create(CustomSongDelegate*) = win 0x90140;
 
-	bool init(CustomSongDelegate*);
-	void onClose(cocos2d::CCObject* sender);
+	bool init(CustomSongDelegate*) = win 0x901e0;
+	void onClose(cocos2d::CCObject* sender) = win 0x90d50;
 	void onFadeIn(cocos2d::CCObject* sender);
 	void onFadeOut(cocos2d::CCObject* sender);
 	void onInfo(cocos2d::CCObject* sender);
-	void onPlayback(cocos2d::CCObject* sender);
+	void onPlayback(cocos2d::CCObject* sender) = win 0x90a90;
 	TodoReturn updatePlaybackBtn();
 
 	virtual void keyBackClicked();
